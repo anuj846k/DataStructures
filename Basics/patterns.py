@@ -132,7 +132,7 @@ n = int(input("Enter the number :"))
 
 # Pattern 9 Output
 
-#  *  
+#   *  
 #  ***
 # ***** 
 # *****  
@@ -162,4 +162,95 @@ n = int(input("Enter the number :"))
 #     for j in range(0,i):
 #         print(" ",end="")
 
+#     print()
+
+
+# --------------------------------------DAY3----------------------------------------------------
+
+
+
+
+# Pattern 10 Output
+#   *  
+#   **
+#   ***  
+#   **
+#   *  
+
+
+# for i in range(1,(2*n-1)+1):
+#     if i>n:
+#         for j in range(1,(2*n-i)+1):
+#             print("*",end=" ")
+#     else:
+#         for j in range(1,i+1):
+#             print("*",end=" ")
+#     print() 
+
+
+
+
+
+# Pattern 11 Output
+
+# 1
+# 01
+# 101
+# 0101
+# 10101
+# 010101
+
+
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        if((i+j)%2 ==0):
+            print(0,end=" ")
+        else:
+            print(1,end=" ")
+                        
+    print()         
+
+
+
+
+
+
+
+
+
+# Extra Questions 
+
+# THis is the output
+# 1 * * * *
+# 1 2 * * * 
+# 1 2 3 * * 
+# 1 2 3 4 *
+# 1 2 3 4 5
+
+
+
+# for i  in range(1,n+1):
+#     for j in range(1,i+1):
+#         print(j,end=" ")
+#     for j in range(1,(n-(i-1))):
+#         print("*",end=' ')
+#     print()    
+
+
+# This is the output
+# 1 
+# **
+# 1 2 3
+# * * * * 
+# 1 2 3 4 5
+
+
+# DOUBT
+# for i in range(1, n+1):
+#     if i % 2 != 0:
+#         for j in range(1, i+1):
+#             print(j, end=" ")
+#     else:
+#         for j in range(0, i):
+#             print("*", end=' ')
 #     print()
