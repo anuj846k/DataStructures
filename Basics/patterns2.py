@@ -167,3 +167,60 @@ n= int(input("Enter the number :"))
 #     print()
 
 
+
+
+# Pattern 20 output
+
+# *         * 
+# * *     * * 
+# * * * * * * 
+# * *     * * 
+# *         * 
+
+# spaces = 2 * n - 2
+
+# for i in range(1, (2 * n - 1) + 1):
+#     stars = i 
+#     if i > n:
+#         stars = 2*n -i
+
+#     for j in range(1, stars+1):
+#         print("*", end=" ")
+    
+#     for j in range(1, spaces + 1):
+#         print(" ", end=" ")
+    
+#     for j in range(1, stars+1):
+#         print("*", end=" ")
+
+#     if i < n:
+#         spaces -= 2
+#     else:
+#         spaces += 2
+#     print()
+
+
+
+
+
+# Pattern 21 output
+
+# ******
+# *    *
+# *    *
+# *    *
+# *    *
+# ******
+
+
+
+for i in range(1,n+1):
+    for j in range(1,n+1):
+        if i == 1 or i == n or j == 1 or j == n:
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+
+
+
